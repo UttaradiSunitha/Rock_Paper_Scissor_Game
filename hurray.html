@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hurray</title>
+    <link rel="stylesheet" href="./hurray.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="content">
+        <div id="background">
+            <img src="./Assets/background.png" alt="star">
+        </div>
+        <div id="vector">
+            <img src="./Assets/Vector.png" alt="vector">
+        </div>
+        <h1>HURRAY!!</h1>
+        <p>YOU WON THE GAME</p>
+        <a href=""><button id="playagain"><a href="./index.html">PLAY AGAIN</a></button></a>
+    </div>
+    <aside id="aside">
+        <h2>Game Rules</h2>
+        <ul>
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you'll count off "rock, paper, scissors, shoot" or just "rock, paper, scissors."</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+            <li>If both players lay down the same hand, each player lays down another hand</li>
+        </ul>
+        <p id="close">X</p>
+    </aside>
+    <button id="rules">RULES</button>
+    <script>
+    const rules=document.getElementById('rules');
+    const close=document.getElementById('close');
+
+    let displayRules=()=>aside.style.display='block';
+    rules.addEventListener('click',displayRules);
+
+    //functions to close the rules 
+
+    let closeRules=()=>aside.style.display='none'; 
+    close.addEventListener('click',closeRules);
+
+function playAgain(){
+   
+   userscore.textContent=userScore;
+   pcscore.textContent=pcScore;
+   
+}
+
+    playagain.addEventListener('click',playAgain)
+    </script>
+    
+</body>
+</html>

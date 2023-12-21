@@ -3,9 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock, Paper, Scissors Game</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dangrek&family=Poppins:ital@0;1&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="./Assets/rock-paper-scissors.png">
 </head>
 <body>
-    <h1>hello world</h1>
+    <!-- Header starts here -->
+    <header id="header" >
+        <div id="title">
+            <h1>ROCK 
+PAPER 
+SCISSORS</h1>
+        </div>
+        <div class="scores">
+            <p>COMPUTER SCORE</p>
+            <div class="score" id="pcscore" >0</div>
+        </div>
+        <div class="scores">
+            <p>YOUR <br>SCORE</p>
+            <div class="score" id="userscore">0</div>
+        </div>
+    </header>
+    <!-- Header ends here -->
+    <!-- main content starts here  -->
+    <div id="main-content">
+        <main id="main">
+            <div id="rock" class="image"><img src="./Assets/rock.png" alt="rock"></div>
+            <span id="hr1"></span>
+            <span id="hr2"></span>
+            <div id="paper" class="image"><img src="./Assets/paper.png" alt="paper"></div>
+            <div id="scissor" class="image"><img src="./Assets/scissor.png" alt="scissor"></div>
+            <span id="hr3"></span>
+            <p id="user">YOU PICKED</p> 
+            <p id="pc">PC PICKED</p>
+            <div id="result">
+                <p id="para1" ></p>
+                <p id="para2"></p>
+                <button id="playagain"></button>
+            </div>
+            <div id="system">
+                <div id="rock1" class="image"><img src="./Assets/rock.png" alt="rock"></div>
+                <div id="paper1" class="image"><img src="./Assets/paper.png" alt="paper"></div>
+                <div id="scissor1" class="image"><img src="./Assets/scissor.png" alt="scissor"></div>
+            </div>
+        </main>
+        <div class="dots">
+        </div>
+        <aside id="aside">
+            <h2>Game Rules</h2>
+            <ul>
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li>Agree ahead of time whether you'll count off "rock, paper, scissors, shoot" or just "rock, paper, scissors."</li>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <li>If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+            <p id="close">X</p>
+        </aside>
+    </div>
+    <footer>
+        <button id="rules">RULES</button>
+        <button id="next"><a href="./hurray.html" target="_blank">NEXT</a></button>
+    </footer>
+    <div id="concentric1">
+        <span id="cir1"></span> 
+        <span id="cir2"></span>
+        <span id="cir3"></span>
+    </div>
+    <div id="concentric2">
+        <span id="cir4"></span> 
+        <span id="cir5"></span>
+        <span id="cir6"></span>
+    </div>
+    <script src="./index.js"></script>
 </body>
 </html>

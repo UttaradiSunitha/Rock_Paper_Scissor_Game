@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding: 0;
+    background: #89C15E;
+}
+:root{
+    --white:#ffffff;
+    --font:roboto,'Times New Roman', Times, serif;
+}
+#content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 62px;
+}
+#vector{
+    width:200.43px;
+    height:201px;
+    position:relative;
+    bottom:190px;
+    left:10px;
+}
+#background{
+    width:504px;
+    height:297px;
+}
+h1{
+font-family: var(--font);
+font-size: 91px;
+font-weight: 600;
+line-height: 107px;
+letter-spacing: 5px;
+text-align: center;
+margin-top:-150px;
+color:var(--white);
+}
+p{
+font-family: var(--font);
+font-size: 41px;
+font-weight: 600;
+line-height: 48px;
+letter-spacing: 5px;
+text-align: center;
+color: var(--white);
+margin:10px;
+}
+#playagain{
+    width:174px;
+    height:44px;
+    border-radius: 9px;
+    border: 2px solid var(--white);
+    margin:20px;
+    background: var(--white);
+    text-align: center;
+    margin:50px;
+    cursor: pointer;
+}
+#playagain a{
+    text-decoration: none;
+    font-family: var(--font);
+    font-family: 600;
+    font-size: 15px;
+    color: #6B6B6B;
+    letter-spacing: 2px;
+    background: var(--white);
+}
+
+#rules{
+    font-family: var(--font);
+    font-family: 600;
+    font-size: 21px;
+    color: var(--white);
+    width:119px;
+    height:40px;
+    border-radius: 10px;
+    border: 2px solid var(--white);
+    letter-spacing: 2px;
+    position:absolute;
+    bottom:-150px;
+    left:1150px;
+    cursor: pointer;
+}
+/* aside content style properties starts here */
+#aside{
+    width:278px;
+    height:325px;
+    border: 7px solid var(--white);
+    border-radius: 13px;
+    background: #004429;
+    align-self: flex-end;
+    margin-left:170px;
+    margin-top:100px;  
+    display: none;
+    position:relative;
+    left:800px;
+    bottom:500px;
+}
+aside h2{
+    font-weight: 500;
+    font-size: 29px;
+    color:var(--white);
+    font-family: var(--font);
+    text-align: center;
+    background: #004429;
+    padding:10px 30px;
+}
+ul li{
+    list-style-type: square;
+    font-family: var(--font);
+    color:var(--white);
+    background: #004429;
+    font-size: 13px;
+    line-height: 1.3;
+}
+ul li::marker{
+    color: #FFD600;
+    font-size: 24px;
+}
+ul{
+    background: #004429;
+    padding:10px 30px  10px 40px; 
+}
+/* aside content style properties ends here */
+#close{
+    font-family: Dangrek;
+    font-size: 44px;
+    font-weight: 400;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 5px solid var(--white);
+    border-radius: 50%;
+    color: var(--white);
+    background: red;
+    position:relative;
+    bottom:345px;
+    left:240px;
+    cursor: pointer;
+}
+
